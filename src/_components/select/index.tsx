@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./style.css"
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 export const Select = () => {
   return (
@@ -10,6 +10,7 @@ export const Select = () => {
         <option value={1}>1</option>
         <option value={2}>2</option>
       </select>
+      <AddCircleOutlineIcon className="AAddCircleOutlineIcon"/>
     </div>
   )
 }

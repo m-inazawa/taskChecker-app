@@ -1,0 +1,13 @@
+.task_list {
+  min-width: 300px;
+  width: auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.task {
+  align-items: flex-start;
+}

@@ -1,7 +1,7 @@
 .select {
-  width: 160px;
+  width: 150px;
   height: 20px;
-  margin-left: 72px;
+  margin: 0 10px 0 58px;
   font-size: 15px;
   color: rgb(70, 70, 70);
   border: none;
@@ -10,6 +10,7 @@
   cursor: pointer;
 }
 
-.AddCircleOutlineIcon {
+.AAddCircleOutlineIcon {
   font-size: default;
+  vertical-align: -5px;
 }

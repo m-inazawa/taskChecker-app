@@ -2,8 +2,8 @@
 import "./style.css";
 import { Header } from "../../_components/header";
 import { Select } from "../../_components/select";
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-
+import { TaskField } from "../../_components/toDoList/index";
+import { ToDoList } from "../../_components/toDoList/toDoList";
 
 export const Home = () => {
   return (
@@ -11,8 +11,10 @@ export const Home = () => {
     <Header />
     <div className="genre">
       <Select />
-      <AddCircleOutlineIcon
-        className="add_circle_outline_icon"/>
+    </div>
+    <div className="contents">
+      <TaskField />
+      <ToDoList />
     </div>
   </div>
   );
