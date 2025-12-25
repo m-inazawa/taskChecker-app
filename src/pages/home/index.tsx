@@ -7,15 +7,15 @@ import { ToDoList } from "../../_components/toDoList/toDoList";
 
 export const Home = () => {
   return (
-  <div className="main">
-    <Header />
-    <div className="genre">
-      <Select />
+    <div className="main">
+      <Header />
+      <div className="genre">
+        <Select />
+      </div>
+      <div className="contents">
+        <TaskField />
+        <ToDoList />
+      </div>
     </div>
-    <div className="contents">
-      <TaskField />
-      <ToDoList />
-    </div>
-  </div>
   );
 };

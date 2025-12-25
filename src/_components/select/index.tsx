@@ -5,6 +5,10 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import { FormModal } from "../modal/modal";
 import { SelectFormModal } from "../formModal/selectFormModal"
 
+// interface FormProps {
+//   onAdd: (text: string) => void;
+// }
+
 export const Select = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => setIsOpen(true);
