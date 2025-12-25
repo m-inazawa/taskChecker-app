@@ -1,0 +1,45 @@
+.React-Modal__Overlay {
+  background-color: "rgb(80, 80, 80, 0.8)" !important;
+}
+
+.ReactModal__Content {
+  top: 10%;
+  /* left: 30%; */
+  width: 23vw;
+  height: 65vh;
+  margin-left: 34vw;
+  padding: 2vw 10vw;
+}
+
+.rounded-btn {
+  padding: 8px 20px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 999px; 
+  transition: all 0.3s ease;
+}
+
+.rounded-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.btn {
+  display: flex;
+}
+
+.button_group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Modal_cancel_btn {
+  margin-left: 10px;
+  font-size: large;
+  vertical-align: -7px;
+}

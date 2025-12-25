@@ -8,7 +8,9 @@
 .task_field {
   width: 165px;
   min-height: 50px;
-  height: auto;
+  max-height: 135px;
+  overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   background-color: white;

@@ -6,6 +6,8 @@ export const ToDoList = () => {
     <div className="section">
       <div className="task_field">
         <Task />
+        <Task />
+        <Task />
       </div>
       <div className="task_field">
         <Task />

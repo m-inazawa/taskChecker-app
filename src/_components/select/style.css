@@ -10,7 +10,12 @@
   cursor: pointer;
 }
 
-.AAddCircleOutlineIcon {
+.AAddCircleOutlineIcon, .ModalStyle {
   font-size: default;
   vertical-align: -5px;
+}
+
+.ModalStyle {
+  pointer-events: none;
+  cursor: default;
 }

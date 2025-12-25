@@ -2,14 +2,13 @@ import { useState } from "react";
 import "./style.css"
 import { IconButton } from "@mui/material";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-import { FormModal } from "../modal/modal";
-import { SelectFormModal } from "../formModal/selectFormModal"
+import { FormModal } from "../modal/index";
 
-// interface FormProps {
-//   onAdd: (text: string) => void;
-// }
+interface Props {
+  isInsideModal?: boolean; 
+}
 
-export const Select = () => {
+export const Select = ({ isInsideModal = false }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => setIsOpen(true);
   const handleClose = () => setIsOpen(false);
@@ -17,17 +16,23 @@ export const Select = () => {
   return (
     <div>
       <select className="select">
-        <input type="text" placeholder="TECH CAMP" className="task-input"/>
         <option value={0}>0</option>
         <option value={1}>1</option>
         <option value={2}>2</option>
       </select>
+      {isInsideModal ? (
+        <IconButton className="ModalStyle">
+          <AddCircleOutlineIcon />
+        </IconButton>
+      ) : (
       <IconButton onClick={handleOpen}>
         <AddCircleOutlineIcon className="AAddCircleOutlineIcon"/>
       </IconButton>
-      <FormModal isOpen={isOpen} handleClose={handleClose} >
-        <SelectFormModal/>
-      </FormModal>
+      )}
+      {!isInsideModal && (
+        <FormModal isOpen={isOpen} handleClose={handleClose} >
+        </FormModal>
+      )}
     </div>
   )
 }
