@@ -1,13 +1,49 @@
-.task_list {
-  min-width: 300px;
-  width: auto;
-  padding: 0 15px;
+.task {
+  min-height: 100px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  list-style: none;
+  gap: 8px;
+  /* align-items: flex-start; */
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.task {
-  align-items: flex-start;
+.task_header {
+  display: flex;
+  align-items: center; /* 上下中央 */
+  justify-content: space-between; /* 両端に配置（お好みで） */
+  margin-bottom: 4px;
+}
+
+/* .add_circle_outline_icon {
+  font-size: default;
+  vertical-align: -5px;
+} */
+
+.delete_icon {
+  font-size: 1.2rem !important;
+  cursor: pointer;
+  color: #999;
+}
+
+.delete_icon:hover {
+  color: #ff4d4f;
+}
+
+.task_text_contents p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.task-expired {
+  background-color: rgb(250, 194, 194);
+}
+
+.task_date, .task_title, .task_sentence {
+  margin: 0;
+  padding: 0;
 }

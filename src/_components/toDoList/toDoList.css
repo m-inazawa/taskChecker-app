@@ -5,12 +5,19 @@
   justify-content: space-evenly;
 }
 
+/* .task_status_grid {
+  width: 200px;
+  gap: 50px;
+  /* margin-left: 40px; */
+  /* align-items: center; */
+
 .task_field {
   width: 165px;
   min-height: 50px;
   max-height: 135px;
   overflow-x: hidden;
   overflow-y: auto;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   background-color: white;

@@ -1,11 +1,11 @@
-.section {
+.section, .task_status_grid {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.Menu_field {
+.Menu_field, .status_column {
   width: 165px;
   height: 50px;
   margin-bottom:15px;
